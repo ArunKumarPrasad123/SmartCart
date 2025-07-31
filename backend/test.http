@@ -1,0 +1,7 @@
+POST http://localhost:8000/api/auth/adminLogin
+Content-Type: application/json
+
+{
+  "email": "admin@SmartCart.com",
+  "password": "admin1234567"
+}
