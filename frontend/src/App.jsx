@@ -3,7 +3,7 @@ import { Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Registration from './pages/Registration';
-import Nav from './component/nav';
+import Nav from './component/Nav';
 import { userDataContext } from './Context/UserContext';
 import About from './pages/About';
 import Collections from './pages/Collections';
