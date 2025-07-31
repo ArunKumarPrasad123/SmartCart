@@ -32,8 +32,8 @@ export const registration = async (req, res) => {
     let token = genToken(user._id);
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // Set to true in production with HTTPS
-      sameSite: "strict",
+      secure: true, // Set to true in production with HTTPS
+      sameSite: "None",
       maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
     });
 
@@ -68,8 +68,8 @@ export const login = async (req, res) => {
     let token = genToken(user._id);
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "strict",
+      secure: true,
+      sameSite: "None",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -112,8 +112,8 @@ export const googleLogin = async (req, res) => {
     let token = genToken(user._id);
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // set true if using https
-      sameSite: "strict",
+      secure: true, // set true if using https
+      sameSite: "None",
       maxAge: 7 * 24 * 60 * 60 * 1000
     });
 
@@ -137,8 +137,8 @@ export const adminLogin = async (req,res) => {
     let token = await genToken1(email);
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false, // set true if using https
-      sameSite: "strict",
+      secure: true, // set true if using https
+      sameSite: "None",
       maxAge: 1 * 24 * 60 * 60 * 1000
     });
 
