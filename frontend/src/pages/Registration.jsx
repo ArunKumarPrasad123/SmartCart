@@ -9,7 +9,7 @@ import { useContext } from 'react'
 import { authDataContext } from '../Context/AuthContext';
 import axios from 'axios'
 import { signInWithPopup } from 'firebase/auth';
-import { auth, provider } from '../../utils/Firebase';
+import { auth, provider } from '../../utils/FireBase';
 import { userDataContext } from '../Context/UserContext';
 
 
