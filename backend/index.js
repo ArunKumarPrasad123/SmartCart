@@ -17,7 +17,7 @@ let app = express()
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-  origin: ["https://smartcart-frontendone.onrender.com", "http://localhost:5174"],
+  origin: ["https://smartcart-frontendone.onrender.com", "https://smartcart-admin.onrender.com"],
   credentials: true
 }))
 
